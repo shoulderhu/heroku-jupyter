@@ -23,4 +23,3 @@ dependencies:
     - scikit-image
     - numpy
     - matplotlib
-    - pyspark
