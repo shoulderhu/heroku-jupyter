@@ -1,15 +1,21 @@
 name: venv
 dependencies:
-  - notebook
+  # bind notebook version (compatibility to pgcontents)
+  - notebook = 4
   - ipywidgets
   - requests
+  # bind ipython version (compatibility to pgcontents)
+  - ipython = 5
+  # bind tornado version (websocket problems)
+  - tornado = 4.5
   # get dependencies for pgcontents
   - certifi
   - click
+  - cryptography
   - mako
   - psycopg2
   - six
   - sqlalchemy
   - nose
   - pip:
-    - git+git://github.com/pl31/pgcontents.git
+    - pgcontents
